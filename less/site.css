@@ -1,3 +1,73 @@
+/* Mixin */
+.button-color {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #11c5d9), color-stop(1, #032b40));
+  background-image: -o-linear-gradient(bottom, #11c5d9 0%, #032b40 100%);
+  background-image: -moz-linear-gradient(bottom, #11c5d9 0%, #032b40 100%);
+  background-image: -webkit-linear-gradient(bottom, #11c5d9 0%, #032b40 100%);
+  background-image: -ms-linear-gradient(bottom, #11c5d9 0%, #032b40 100%);
+  background-image: linear-gradient(to bottom, #11c5d9 0%, #032b40 100%);
+}
+.orange-gradiant {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f68569), color-stop(1, #802815));
+  background-image: -o-linear-gradient(bottom, #f68569 0%, #802815 100%);
+  background-image: -moz-linear-gradient(bottom, #f68569 0%, #802815 100%);
+  background-image: -webkit-linear-gradient(bottom, #f68569 0%, #802815 100%);
+  background-image: -ms-linear-gradient(bottom, #f68569 0%, #802815 100%);
+  background-image: linear-gradient(to bottom, #f68569 0%, #802815 100%);
+}
+.shadow {
+  -webkit-box-shadow: 6px 6px 12px -5px #000000;
+  -moz-box-shadow: 6px 6px 12px -5px #000000;
+  box-shadow: 6px 6px 12px -5px #000000;
+}
 body {
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
   background-color: #000000;
+}
+#nav-menu {
+  width: 80px;
+  position: fixed;
+  top: 35%;
+  right: -80px;
+  border: 1px solid #3a3b3f;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #11c5d9), color-stop(1, #032b40));
+  background-image: -o-linear-gradient(bottom, #11c5d9 0%, #032b40 100%);
+  background-image: -moz-linear-gradient(bottom, #11c5d9 0%, #032b40 100%);
+  background-image: -webkit-linear-gradient(bottom, #11c5d9 0%, #032b40 100%);
+  background-image: -ms-linear-gradient(bottom, #11c5d9 0%, #032b40 100%);
+  background-image: linear-gradient(to bottom, #11c5d9 0%, #032b40 100%);
+  -webkit-border-radius: 80px 80px 80px 80px;
+  -moz-border-radius: 80px 80px 80px 80px;
+  border-radius: 80px 80px 80px 80px;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+#nav-menu div {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f68569), color-stop(1, #802815));
+  background-image: -o-linear-gradient(bottom, #f68569 0%, #802815 100%);
+  background-image: -moz-linear-gradient(bottom, #f68569 0%, #802815 100%);
+  background-image: -webkit-linear-gradient(bottom, #f68569 0%, #802815 100%);
+  background-image: -ms-linear-gradient(bottom, #f68569 0%, #802815 100%);
+  background-image: linear-gradient(to bottom, #f68569 0%, #802815 100%);
+  background-color: #338fa5;
+  -webkit-border-radius: 80px 80px 80px 80px;
+  -moz-border-radius: 80px 80px 80px 80px;
+  border-radius: 80px 80px 80px 80px;
+  -webkit-box-shadow: 6px 6px 12px -5px #000000;
+  -moz-box-shadow: 6px 6px 12px -5px #000000;
+  box-shadow: 6px 6px 12px -5px #000000;
+}
+#nav-menu div i {
+  font-size: 40px;
+}
+#jobs {
+  color: #f5f5f5;
+}
+.tech-value {
+  background-color: green;
+  width: 40%;
 }

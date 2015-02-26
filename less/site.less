@@ -1,5 +1,96 @@
+/* Mixin */
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+  -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+  -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+  border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+
+.button-color{
+  background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0, #11C5D9),
+          color-stop(1, #032B40)
+  );
+  background-image: -o-linear-gradient(bottom, #11C5D9 0%, #032B40 100%);
+  background-image: -moz-linear-gradient(bottom, #11C5D9 0%, #032B40 100%);
+  background-image: -webkit-linear-gradient(bottom, #11C5D9 0%, #032B40 100%);
+  background-image: -ms-linear-gradient(bottom, #11C5D9 0%, #032B40 100%);
+  background-image: linear-gradient(to bottom, #11C5D9 0%, #032B40 100%);
+
+}
+
+.orange-gradiant{
+  background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0, #F68569),
+          color-stop(1, #802815)
+  );
+  background-image: -o-linear-gradient(bottom, #F68569 0%, #802815 100%);
+  background-image: -moz-linear-gradient(bottom, #F68569 0%, #802815 100%);
+  background-image: -webkit-linear-gradient(bottom, #F68569 0%, #802815 100%);
+  background-image: -ms-linear-gradient(bottom, #F68569 0%, #802815 100%);
+  background-image: linear-gradient(to bottom, #F68569 0%, #802815 100%);
+}
+
+
+
+.shadow{
+  -webkit-box-shadow: 6px 6px 12px -5px rgba(0,0,0,1);
+  -moz-box-shadow: 6px 6px 12px -5px rgba(0,0,0,1);
+  box-shadow: 6px 6px 12px -5px rgba(0,0,0,1);
+}
+
+.opacity (@opacity: 0.5) {
+  -webkit-opacity: 	@opacity;
+  -moz-opacity: 		@opacity;
+  opacity: 		@opacity;
+}
+
+
 body{
+  font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
   background-color: #000000;
 
 
+}
+
+#nav-menu{
+  width: 80px;
+  position: fixed;
+  top: 35%;
+  right:-80px;
+  border: 1px solid rgb(58, 59, 63);
+  .button-color;
+  .border-radius-custom(80px,80px,80px,80px);
+  .opacity(0.8);
+
+  div{
+      margin:10px;
+      padding :10px;
+      text-align: center;
+      .orange-gradiant;
+      background-color: rgb(51, 143, 165);
+      .border-radius-custom(80px,80px,80px,80px);
+      .shadow;
+
+        i{
+          font-size: 40px;
+        }
+  }
+
+}
+
+#jobs{
+
+  color:#f5f5f5;
+}
+
+.tech-value{
+  background-color: green;
+  width:40%;
 }
