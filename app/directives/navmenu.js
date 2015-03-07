@@ -8,7 +8,7 @@ app.directive('navMenu',function(){
         restrict:'AE',
         replace:true,
         template:'<div id="nav-menu">' +
-                    '<div nav-item position="100"><i class="fa fa-user"></i></div>' +
+                    '<div nav-item position="0"><i class="fa fa-user"></i></div>' +
                     '<div nav-item position="500"><i class="fa fa-user"></i></div>' +
                     '<div nav-item position="800"><i class="fa fa-user"></i></div>' +
                     '<div nav-item position="1000"><i class="fa fa-user"></i></div>' +

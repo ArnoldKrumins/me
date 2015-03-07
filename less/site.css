@@ -1,4 +1,11 @@
 /* Mixin */
+.gray-font {
+  color: dimgrey;
+}
+body {
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  background-color: #000000;
+}
 .button-color {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #11c5d9), color-stop(1, #032b40));
   background-image: -o-linear-gradient(bottom, #11c5d9 0%, #032b40 100%);
@@ -20,9 +27,18 @@
   -moz-box-shadow: 6px 6px 12px -5px #000000;
   box-shadow: 6px 6px 12px -5px #000000;
 }
-body {
-  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
-  background-color: #000000;
+.clouds {
+  position: relative;
+  top: -20px;
+  left: -8px;
+  background: url(../images/clouds.jpg) no-repeat top right;
+  padding: 0;
+  min-height: 520px;
+  height: 520px;
+  width: 100%;
+  min-width: 100%;
+  margin: 0;
+  background-size: cover;
 }
 #nav-menu {
   width: 80px;

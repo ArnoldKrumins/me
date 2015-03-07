@@ -1,7 +1,7 @@
 /**
  * Created by arnoldkrumins on 26/02/15.
  */
-app.directive('navItem',function(){
+app.directive('navItem',function($window){
 
     var scale = 0.8;
 
@@ -20,7 +20,7 @@ app.directive('navItem',function(){
 
 
             element.on('click',function(){
-                TweenLite.to(window, 2, {scrollTo:{y:scope.position}, ease:Power2.easeOut});
+                TweenLite.to($window, 2, {scrollTo:{y:scope.position}, ease:Power2.easeOut});
             })
         }
     }

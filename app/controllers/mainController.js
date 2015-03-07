@@ -13,7 +13,7 @@ app.controller('mainCtrl',function($scope){
                        ' to a number of NHS hospitals throughout the UK.',
           projects:[{
               name: 'Energis Billing System',
-              description: 'ITR Telecom required a way to take the raw billing data recieved from Energis to produce detailed billing..',
+              description: 'Chosen from university by the head of the department I was initially contracted to design and develop a bespoke telephone billing system. This was extended to additional functionality as well as integrating the billing system into the Sage accounting software.',
               techs:[{ name: 'Visual Basic', used:'100'},
                   { name: 'MS Access',used:'80'},
                   { name: 'SQL Server',used:'100'},

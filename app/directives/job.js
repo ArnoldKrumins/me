@@ -3,9 +3,6 @@
  */
 app.directive('cv',function(){
 
-
-
-    var px = "px";
     return{
         restrict:'EA',
         scope:{ jobs:'='},
@@ -35,10 +32,9 @@ app.directive('cv',function(){
                         '</li>' +
                     '</ul>' +
                  ' </div>',
-        link:function(scope,elelment,attrs){
+        link:function(scope,element,attrs){
 
-            var p = scope.jobs;
-            var s = px(100);
+
 
         }
 
