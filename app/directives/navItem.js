@@ -20,7 +20,8 @@ app.directive('navItem',function($window){
 
 
             element.on('click',function(){
-                TweenLite.to($window, 2, {scrollTo:{y:scope.position}, ease:Power2.easeOut});
+                TweenMax.fromTo(element,1,{scale:1},{scale:0.8});
+                TweenLite.to($window, 2, {scrollTo:{y:scope.position,x:0}, ease:Power2.easeOut});
             })
         }
     }

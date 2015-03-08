@@ -27,18 +27,17 @@ body {
   -moz-box-shadow: 6px 6px 12px -5px #000000;
   box-shadow: 6px 6px 12px -5px #000000;
 }
-.clouds {
+.header-image {
   position: relative;
   top: -20px;
   left: -8px;
-  background: url(../images/clouds.jpg) no-repeat top right;
+  background: #00e8fe url(../images/me.jpg) no-repeat top left;
   padding: 0;
   min-height: 520px;
   height: 520px;
-  width: 100%;
-  min-width: 100%;
   margin: 0;
-  background-size: cover;
+  width: 102%;
+  min-width: 100%;
 }
 #nav-menu {
   width: 80px;
