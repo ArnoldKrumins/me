@@ -39,6 +39,14 @@ body {
   width: 102%;
   min-width: 100%;
 }
+.clouds-image {
+  background: url(../images/clouds.jpg) no-repeat top left;
+  min-height: 520px;
+  height: 520px;
+  margin: 0;
+  width: 102%;
+  min-width: 100%;
+}
 #nav-menu {
   width: 80px;
   position: fixed;
