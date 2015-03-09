@@ -15,13 +15,7 @@
       <div class="col-md-12 ">
           <!--<h4>"I never wanted to be a <strong>Rockstar</strong>..I always wanted to be the <strong>Producer</strong>."</h4>-->
 
-          <div id="skills-container">
-              <ul ng-repeat="skill in skills">
-                  <li>
-                      <div class="skill-circle skill{{$index}}"><span>{{skill.title}}</span></div>
-                  </li>
-              </ul>
-          </div>
+          <div skills="skills"></div>
 
       </div>
       <nav-menu></nav-menu>
@@ -54,5 +48,6 @@
 <script src="app/directives/navmenu.js"></script>
 <script src="app/directives/navItem.js"></script>
 <script src="app/directives/job.js"></script>
+<script src="app/directives/skills.js"></script>
 
 </html>
