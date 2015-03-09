@@ -13,13 +13,22 @@
 <div class="container-fluid">
   <div class="row header-image">
       <div class="col-md-12 ">
-          <h4>"I never wanted to be a <strong>Rockstar</strong>..I always wanted to be the <strong>Producer</strong>."</h4>
+          <!--<h4>"I never wanted to be a <strong>Rockstar</strong>..I always wanted to be the <strong>Producer</strong>."</h4>-->
+
+          <div id="skills-container">
+              <ul ng-repeat="skill in skills">
+                  <li>
+                      <div class="skill-circle skill{{$index}}"><span>{{skill.title}}</span></div>
+                  </li>
+              </ul>
+          </div>
+
       </div>
       <nav-menu></nav-menu>
 
 
   </div>
-  <div class="row  clouds-image">
+  <div class="row">
       <div class="col-md-12">
 
           <cv jobs="jobs"></cv>

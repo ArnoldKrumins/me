@@ -4,6 +4,17 @@
 app.controller('mainCtrl',function($scope){
 
 
+    $scope.skills = [
+        { title:'Creative'},
+        { title:'Frontend'},
+        {title:'Backend'},
+        {title:'SQL'},
+        {title:'Agile'},
+        {title:'Responsive'},
+        {title:'Mobile'},
+        {title:'MVC'}
+    ];
+
     $scope.jobs = [
 
         { title:'Developer',
