@@ -25,6 +25,7 @@ app.factory('CVDataService',function($q){
                 {
                     name: 'Payphone Commission ',
                     filter:'Windows,SQL,FullStack',
+                    team:'1',
                     description: 'ITR had 2000+ payphones within hospitals throughout the UK.  I developed a system to allow users to input revenue for each phone and work out the commission on each phone or any logical groupings such as departments or groups of hospitals. The software also provided extensive management and invoicing reports.',
                     techs:[{ name: 'Visual Basic 6', used:'100'},
                         { name: 'MS Access 2.0',used:'80'},

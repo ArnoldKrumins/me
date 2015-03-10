@@ -11,6 +11,19 @@
 </head>
 <body ng-app="me" ng-controller="mainCtrl">
 <div class="container-fluid">
+
+
+   <div id="social-header">
+       <ul>
+           <li><a href="https://www.facebook.com/arnold.krumins" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+           <li><a href="https://plus.google.com/u/0/+ArnoldKrumins/posts" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
+           <li><a href="https://github.com/ArnoldKrumins" target="_blank"><i class="fa fa-github-square"></i></a></li>
+           <li><a href="https://twitter.com/ArnoldKrumins" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+           <li><a href="https://www.youtube.com/channel/UC_6mKlQmG9N0KhIJ2D_JIqg" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
+
+       </ul>
+   </div>
+
   <div class="row header-image">
       <div class="col-md-12 ">
           <!--<h4>"I never wanted to be a <strong>Rockstar</strong>..I always wanted to be the <strong>Producer</strong>."</h4>-->
@@ -18,7 +31,7 @@
           <div skills="skills"></div>
 
       </div>
-      <nav-menu></nav-menu>
+      <!--<nav-menu></nav-menu>-->
 
 
   </div>
@@ -38,16 +51,19 @@
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-animate/angular-animate.min.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/lodash/lodash.min.js"></script>
 <script src="bower_components/gsap/src/minified/TimelineMax.min.js"></script>
 <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
 <script src="bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
 
 
 <script src="app/module.js"></script>
+<script src="app/services/CVDataService.js"></script>
 <script src="app/controllers/mainController.js"></script>
 <script src="app/directives/navmenu.js"></script>
 <script src="app/directives/navItem.js"></script>
 <script src="app/directives/job.js"></script>
 <script src="app/directives/skills.js"></script>
-
+<script src="app/directives/skillsLegend.js"></script>
+<script src="app/directives/team.js"></script>
 </html>

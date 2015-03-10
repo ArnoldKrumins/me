@@ -16,7 +16,9 @@ app.directive('cv',function(){
                             '<p>Desciption: {{ job.description }}</p>' +
                              '<p>Projects</p>' +
                              '<div ng-repeat="project in job.projects">' +
-                                '<p>Name: {{ project.name }}</p>' +
+
+                                '<p>Name: {{ project.name }}{{ project.team}}</p>' +
+                                 '<team devs="project.team"></team>' +
                                 '<p class="col-md-2 col-lg-2">Description: {{ project.description }}</p>' +
                                  '<div ng-repeat="tech in project.techs">' +
                                     '<span>{{ tech.name}}</span>' +
