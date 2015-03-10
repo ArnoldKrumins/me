@@ -4,13 +4,9 @@
 app.directive('team',function(){
 
     return{
-        restrict:'A',
+        restrict:'EA',
         replace:true,
-        scope:{},
-        template:'',
-        link:function(scope,element,attrs){
-
-
-        }
+        scope:{devs:'='},
+        template:'<i class="fa" ng-class="{\'fa-users\': devs > \'1\' , \'fa-user\': devs === \'1\'}"></i>'
     }
 })
