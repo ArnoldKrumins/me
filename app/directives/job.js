@@ -9,15 +9,16 @@ app.directive('cv',function(){
         template:'<div id="jobs">' +
                     '<ul ng-repeat="job in jobs">' +
                         '<li>' +
-                            '<p>Role: {{ job.title }}</p>' +
-                            '<p>Company: {{ job.company }}</p>' +
-                            '<p>Duration: {{ job.duration }}</p>' +
-                            '<p>Website: {{ job.URL }}</p>' +
-                            '<p>Desciption: {{ job.description }}</p>' +
+                            '<p class="job-role">{{ job.title }}</p>' +
+                            '<p class="company">{{ job.company }}<a class="website" ng-if="job.URL.length > 0" href="{{ job.URL }}" target="_blank">website</a></p>' +
+                            '<p class="location">{{ job.location }}</p>' +
+                            '<p class="duration">{{ job.duration }}</p>' +
+                            '<p></p>' +
+                            '<p class="company-description">{{ job.description }}</p>' +
                              '<p>Projects</p>' +
                              '<div ng-repeat="project in job.projects">' +
 
-                                '<p>Name: {{ project.name }}{{ project.team}}</p>' +
+                                '<p>Name: {{ project.name }}</p>' +
                                  '<team devs="project.team"></team>' +
                                 '<p class="col-md-2 col-lg-2">Description: {{ project.description }}</p>' +
                                  '<div ng-repeat="tech in project.techs">' +
