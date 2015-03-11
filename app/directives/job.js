@@ -6,21 +6,19 @@ app.directive('cv',function(){
     return{
         restrict:'EA',
         scope:{ jobs:'='},
-        template:'<div id="jobs">' +
+        template:'<div id="jobs" class="col-md-3 col-lg-3">' +
                     '<ul ng-repeat="job in jobs">' +
                         '<li>' +
                             '<p class="job-role">{{ job.title }}</p>' +
-                            '<p class="company">{{ job.company }}<a class="website" ng-if="job.URL.length > 0" href="{{ job.URL }}" target="_blank">website</a></p>' +
+                            '<p class="company"><i class="fa fa-building"></i>{{ job.company }}<a class="website" ng-if="job.URL.length > 0" href="{{ job.URL }}" target="_blank">website</a><span class="duration">({{ job.duration }})</span></p>' +
                             '<p class="location">{{ job.location }}</p>' +
-                            '<p class="duration">{{ job.duration }}</p>' +
-                            '<p></p>' +
-                            '<p class="company-description">{{ job.description }}</p>' +
-                             '<p>Projects</p>' +
+                             '<p class="company-description">{{ job.description }}</p>' +
+                             '<p class="project">Projects</p>' +
                              '<div ng-repeat="project in job.projects">' +
 
-                                '<p>Name: {{ project.name }}</p>' +
+                                '<p><i class="fa fa-code"></i><span class="project-name">{{ project.name }}</span></p>' +
                                  '<team devs="project.team"></team>' +
-                                '<p class="col-md-2 col-lg-2">Description: {{ project.description }}</p>' +
+                                '<p>{{ project.description }}</p>' +
                                  '<div ng-repeat="tech in project.techs">' +
                                     '<span>{{ tech.name}}</span>' +
 
