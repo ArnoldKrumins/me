@@ -6,7 +6,7 @@ app.directive('cv',function(){
     return{
         restrict:'EA',
         scope:{ jobs:'='},
-        template:'<div id="jobs" class="col-md-6 col-lg-6 col-xs-12">' +
+        template:'<div id="jobs" class="col-md-12 col-lg-9 col-xs-12">' +
                     '<ul ng-repeat="job in jobs">' +
                         '<li>' +
                             '<div class="job-container col-xs-12">' +
