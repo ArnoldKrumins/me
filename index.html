@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Arnold Krumins - Software Professional</title>
 
 
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="less/site.css"/>
 </head>
 <body ng-app="me" ng-controller="mainCtrl">
-<div class="container">
+<div class="container-fluid">
 
 
    <div id="social-header">
@@ -25,7 +28,7 @@
    </div>
 
   <div class="row header-image">
-      <div class="col-md-3">
+      <div>
           <!--<h4>"I never wanted to be a <strong>Rockstar</strong>..I always wanted to be the <strong>Producer</strong>."</h4>-->
 
           <div skills="skills"></div>
@@ -36,7 +39,7 @@
 
   </div>
   <div class="row">
-      <div class="col-md-3">
+      <div>
 
           <cv jobs="jobs"></cv>
       </div>

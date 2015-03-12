@@ -76,8 +76,8 @@ body {
 }
 #social-header ul {
   position: absolute;
-  right: 6px;
-  top: -11px;
+  right: 20px;
+  top: 3px;
 }
 #social-header ul li {
   display: inline-block;
@@ -155,7 +155,7 @@ body {
 }
 #skills-container ul li div span {
   position: relative;
-  top: 48px;
+  top: 42px;
   color: #ffffff;
   font-size: 18px;
   text-shadow: 2px 2px 2px #3d3939;
@@ -186,7 +186,7 @@ body {
   background-color: #3F9E93;
 }
 .skill7 {
-  background-color: #59CBAD;
+  background-color: #AE6DE2;
 }
 #jobs {
   position: relative;
@@ -195,7 +195,39 @@ body {
 #jobs ul {
   list-style: none;
 }
-#jobs ul li .fa-building {
+#jobs ul li {
+  display: inline-block;
+}
+#jobs ul li .job-container {
+  padding: 20px;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  -webkit-box-shadow: 6px 6px 12px -5px #000000;
+  -moz-box-shadow: 6px 6px 12px -5px #000000;
+  box-shadow: 6px 6px 12px -5px #000000;
+  -webkit-border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  border-radius: 30px 30px 30px 30px;
+  border: solid 8px #f5f5f5;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJmOWFhOCIgc3RvcC1vcGFjaXR5PSIwLjY1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjkxJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjA2Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjkzJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjA1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk4JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyZjlhYTgiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDElIiBzdG9wLWNvbG9yPSIjMmY5YWE4IiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+  background: -moz-linear-gradient(left, rgba(47, 154, 168, 0.65) 0%, rgba(0, 0, 0, 0.06) 91%, rgba(0, 0, 0, 0.05) 93%, rgba(0, 0, 0, 0.01) 98%, rgba(47, 154, 168, 0) 100%, rgba(47, 154, 168, 0) 101%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(47, 154, 168, 0.65)), color-stop(91%, rgba(0, 0, 0, 0.06)), color-stop(93%, rgba(0, 0, 0, 0.05)), color-stop(98%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(47, 154, 168, 0)), color-stop(101%, rgba(47, 154, 168, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(47, 154, 168, 0.65) 0%, rgba(0, 0, 0, 0.06) 91%, rgba(0, 0, 0, 0.05) 93%, rgba(0, 0, 0, 0.01) 98%, rgba(47, 154, 168, 0) 100%, rgba(47, 154, 168, 0) 101%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(47, 154, 168, 0.65) 0%, rgba(0, 0, 0, 0.06) 91%, rgba(0, 0, 0, 0.05) 93%, rgba(0, 0, 0, 0.01) 98%, rgba(47, 154, 168, 0) 100%, rgba(47, 154, 168, 0) 101%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(47, 154, 168, 0.65) 0%, rgba(0, 0, 0, 0.06) 91%, rgba(0, 0, 0, 0.05) 93%, rgba(0, 0, 0, 0.01) 98%, rgba(47, 154, 168, 0) 100%, rgba(47, 154, 168, 0) 101%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(47, 154, 168, 0.65) 0%, rgba(0, 0, 0, 0.06) 91%, rgba(0, 0, 0, 0.05) 93%, rgba(0, 0, 0, 0.01) 98%, rgba(47, 154, 168, 0) 100%, rgba(47, 154, 168, 0) 101%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a62f9aa8', endColorstr='#002f9aa8', GradientType=1);
+  /* IE6-8 */
+}
+#jobs ul li .job-container .fa-building {
   position: absolute;
   left: -38px;
 }

@@ -6,9 +6,10 @@ app.directive('cv',function(){
     return{
         restrict:'EA',
         scope:{ jobs:'='},
-        template:'<div id="jobs" class="col-md-3 col-lg-3">' +
+        template:'<div id="jobs" class="col-md-6 col-lg-6 col-xs-12">' +
                     '<ul ng-repeat="job in jobs">' +
                         '<li>' +
+                            '<div class="job-container col-xs-12">' +
                             '<p class="job-role">{{ job.title }}</p>' +
                             '<p class="company"><i class="fa fa-building"></i>{{ job.company }}<a class="website" ng-if="job.URL.length > 0" href="{{ job.URL }}" target="_blank">website</a><span class="duration">({{ job.duration }})</span></p>' +
                             '<p class="location">{{ job.location }}</p>' +
@@ -23,13 +24,14 @@ app.directive('cv',function(){
                                     '<span>{{ tech.name}}</span>' +
 
 
-            '<div class="progress tech-value">' +
-                '<div class="progress-bar" role="progressbar" aria-valuenow="{{tech.used}}" aria-valuemin="0" aria-valuemax="100" style="width: {{tech.used}}%;">' +
-                    '<span class="sr-only">{{tech.used}}% Used</span>' +
-                '</div>' +
-            '</div>' +
+                                        '<div class="progress tech-value">' +
+                                            '<div class="progress-bar" role="progressbar" aria-valuenow="{{tech.used}}" aria-valuemin="0" aria-valuemax="100" style="width: {{tech.used}}%;">' +
+                                                '<span class="sr-only">{{tech.used}}% Used</span>' +
+                                            '</div>' +
+                                        '</div>' +
                                  '</div>' +
                              '</div>' +
+                            '</div>' +
                         '</li>' +
                     '</ul>' +
                  ' </div>',
