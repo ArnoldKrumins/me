@@ -6,8 +6,14 @@ app.directive('skillsLegend',function(){
     return{
         restrict:'A',
         replace:true,
-        scope:{},
-        template:'',
+        scope:{ technologies:'='},
+        template:'<div>' +
+                    '<ul>' +
+                        '<li ng-repeat="tech intechnologies">' +
+                            '<div></div>' +
+                        '</li>' +
+                    '</ul>' +
+                  '</div>',
         link:function(scope,element,attrs){
 
 

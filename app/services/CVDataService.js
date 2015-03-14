@@ -51,9 +51,9 @@ app.factory('CVDataService',function($q){
                 team:1,
                 description: 'Brought in to complete the MATES (Mileage and Timesheet Entry System), which had fallen behind schedule. The software was completed before the deadline. I was also responsible for deploying the software and user training in 15 offices throughout the UK, with a further six months support and developing enhancements.',
                 techs:[{ name: 'Visual Basic 6', used:'100'},
-                    { name: 'MS Access 2.0',used:'80'},
-                    { name: 'SQL Server 2000',used:'100'},
-                    { name: 'AS400',used:'20'}
+                    { name: 'MS Access 2.0',used:'80',class:'1'},
+                    { name: 'SQL Server 2000',used:'100', class:'3'},
+                    { name: 'AS400',used:'20',class:'1'}
                 ]
             }]
 
@@ -72,10 +72,10 @@ app.factory('CVDataService',function($q){
                 team:3,
                 description: 'Designed, developed, managed and maintained the customer management web sites for Cyberviews highly successful Fixed Odd Betting Terminals.  The websites provided extensive reporting on performance and administration of the highly transactional terminals in real-time.',
                 techs:[{ name: 'Visual Basic 6', used:'100'},
-                    { name: 'Classic ASP',used:'100'},
-                    { name: 'HTML',used:'100'},
-                    { name: 'CSS',used:'80'},
-                    { name: 'SQL Server 2000',used:'50'},
+                    { name: 'Classic ASP',used:'100', class:'1'},
+                    { name: 'HTML',used:'100',class:'2'},
+                    { name: 'CSS',used:'80',class:'2'},
+                    { name: 'SQL Server 2000',used:'50',class:'3'},
                 ]
             },
                 {
@@ -83,10 +83,10 @@ app.factory('CVDataService',function($q){
                     filter:'Winforms,SQL,FullStack',
                     team:2,
                     description: 'Designed and developed the UI, middle-ware server components and database for the G2E innovation award winning software. Allowing Casino Operators to maximise profits by dynamically scheduling games and content to terminals in real-time.',
-                    techs:[{ name: 'C# 2.0', used:'100'},
-                        { name: 'SQL Server 2000',used:'50'},
-                        { name: 'Threading',used:'30'},
-                        { name: 'Network Socket Layer',used:'20'},
+                    techs:[{ name: 'C# 2.0', used:'100',class:'1'},
+                        { name: 'SQL Server 2000',used:'50',class:'3'},
+                        { name: 'Threading',used:'30',class:'2'},
+                        { name: 'Network Socket Layer',used:'20',class:'1'},
                     ]
                 },
                 {
