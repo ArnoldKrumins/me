@@ -28,8 +28,6 @@ app.factory('CVDataService',function($q){
                     { name: 'Mobile', used:'100', class:'7'},
                     { name: 'Balsamiq', used:'100', class:'4'}
                 ]
-
-
             }
 
             ]
@@ -164,6 +162,106 @@ app.factory('CVDataService',function($q){
 
         },
 
+
+        { title:'Senior Developer',
+            order:0,
+            company:'AI Media Comms',
+            location:'London, United Kingdom',
+            duration: 'Contract - March 2010 to Dec June 2010',
+            URL:'http://www.aimediacomms.com',
+            description:'AI Media provides software solutions that enables organisations to manage proactive PR campaigns with a comprehensive media contacts database, press release distribution and integrated media monitoring.',
+            projects:[{
+                name: '\'Vuelio \' Media Relations website.',
+                filter:'Web,FullStack',
+                team:1,
+                description: 'The aim was to design and develop a new website geared towards the private sector. This involved taking the existing ‘Newflash’ product and overhauling the UI to incorporate Ajax, freshen up the look and feel and to refactor the existing code base.',
+                techs:[{ name: 'ASP.NET', used:'100', class:'0'},
+                    { name: 'HTML', used:'100', class:'1'},
+                    { name: 'CSS', used:'100', class:'1'},
+                    { name: 'Ajax', used:'100', class:'1'},
+                    { name: 'Agile/SCRUM', used:'100', class:'4'},
+                    { name: 'NHibernate', used:'100', class:'2'},
+                    { name: 'NUnit', used:'100', class:'0'},
+                    { name: 'JavaScript', used:'100', class:'1'},
+                ]
+            }
+
+            ]
+
+
+        },
+
+
+        { title:'Senior Developer',
+            order:0,
+            company:'Freedman International',
+            location:'London, United Kingdom',
+            duration: 'Perm - June 2007 to Dec 2009',
+            URL:'http://www.freedmaninternational.com/',
+            description:'Stendahls are one of the oldest and most innovative and respected digital agencies in Gothenburg',
+            projects:[{
+                name: 'Husqvarna Global Websites',
+                filter:'Web,FullStack',
+                team:4,
+                description: 'Stendahls main account is Husqvarna. This involved the running, maintenance and support of over twenty individual multi-lingual websites and their CMS/DAM systems. My duties involved technical analysis of customer requests and working with Art Directors on designs. Backlog planning to provide estimation and to prioritise tasks. Creating Agile Kanban walls to visualise the on-going work and ultimately doing the work. The projects typically covered 2/3 weekly sprints, followed up by a client presentation and in team retrospective. The projects generally involved creating new campaigns, new pages and enhancements to existing content. All sites are designed to be fully responsive',
+                techs:[{ name: 'HTML', used:'100', class:'2'},
+                    { name: 'CSS', used:'100', class:'2'},
+                    { name: 'ASP.NET', used:'100', class:'1'},
+                    { name: 'ASP.MVC', used:'100', class:'1'},
+                    { name: 'JavaScript', used:'100', class:'2'},
+                    { name: 'Jquery', used:'100', class:'2'},
+                    { name: 'JQuery Mobile', used:'100', class:'7'},
+                    { name: 'Agile/SCRUM', used:'100', class:'5'},
+                    { name: 'Responsive Design', used:'100', class:'6'},
+                    { name: 'Third Party Libs', used:'100', class:'2'},
+                    { name: 'CMS', used:'100', class:'3'}
+
+                ],
+
+                examples:[{name:'Husqvarna',url:'http://www.husqvarna.com/us/home/'},
+                    {name:'McCulloch Chainsaws',url:'http://www.mcculloch.com/uk/products/'},
+                    {name:'Husqvarna Construction',url:'http://www.husqvarna.com/us/construction/company/proudprofessionals/'},
+                    {name:'Gardena',url:'http://www.gardena.com/au/'}
+                ]
+
+            },
+                {
+                    name: 'UD Trucks',
+                    filter:'Web,FrontEnd',
+                    team:6,
+                    description: 'I have also assisted in the launch for the Japanese UD Trucks website for the \' NewBiz \' team',
+                    techs:[{ name: 'HTML', used:'100', class:'0'},
+                        { name: 'CSS', used:'100', class:'0'},
+                        { name: 'ASP.MVC', used:'100', class:'1'},
+                        { name: 'JavaScript', used:'100', class:'0'},
+                        { name: 'Jquery', used:'100', class:'0'},
+                        { name: 'EPI Server', used:'100', class:'2'},
+                        { name: 'Agile/Scrum', used:'100', class:'4'}
+                    ],
+
+                    examples:[{name:'UD Trucks',url:'http://www.udtrucks.com/'}
+
+                    ]
+
+                },
+
+                {
+                    name: 'Cochlear',
+                    filter:'Web,FrontEnd',
+                    team:2,
+                    description: 'Was involved in technical workshop to evaluate the Xamarin mobile development framework as a suitable platform for Cochlear’s new companion mobile app.',
+                    techs:[{ name: 'Xamarin', used:'100', class:'5'},
+                        { name: 'Design Concepts', used:'100', class:'2'}
+                    ],
+
+                    examples:[{name:'Cochlear Website',url:'http://www.cochlear.com/wps/wcm/connect/intl/home/home'}
+
+                    ]
+
+                }
+
+            ]
+        },
 
 
         { title:'Developer',
