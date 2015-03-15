@@ -6,7 +6,7 @@ app.controller('mainCtrl',['$scope','CVDataService',function($scope,CVDataServic
 
     $scope.skills = [
         { title:'.NET'},
-        { title:'Frontend'},
+        { title:'HTML/CSS'},
         {title:'Backend'},
         {title:'UX Design'},
         {title:'Agile/Scrum'},

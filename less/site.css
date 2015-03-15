@@ -66,17 +66,21 @@ body {
   -moz-opacity: 0.4;
   opacity: 0.4;
   filter: alpha(opacity=40);
+  font-size: 30px;
+}
+#social-header .mail {
+  padding-left: 5px;
+  color: #f5f5f5;
 }
 #social-header ul {
   position: absolute;
   right: 20px;
-  top: 3px;
+  top: 0px;
 }
 #social-header ul li {
   display: inline-block;
 }
 #social-header ul li i {
-  font-size: 30px;
   color: #f5f5f5;
 }
 #nav-menu {
@@ -185,6 +189,7 @@ body {
 #jobs {
   position: relative;
   color: #f5f5f5;
+  margin-left: -40px;
 }
 #jobs ul {
   list-style: none;
@@ -258,11 +263,21 @@ body {
   background-color: #cdc63b;
   border: solid 2px #f5f5f5;
 }
+.projectskills {
+  margin: 20px 0;
+}
+.projectskills .skill-circle {
+  border-radius: 100px 100px 100px 100px;
+  padding: 10px;
+  margin: 10px 0 0 10px;
+}
 .dev-info {
   padding-left: 5px;
 }
 .job-role,
-.project {
+.project,
+.project-name,
+.company-name {
   text-shadow: 0px 0px 24px #f5f5f5;
 }
 .job-role {
@@ -274,10 +289,20 @@ body {
 }
 .project-name {
   margin-left: 8px;
+  font-size: 16px;
+}
+.project-description {
+  margin: 10px 0px 10px 55px;
 }
 .company {
   position: relative;
   margin: -12px 0 0 35px;
+}
+.company-name {
+  font-size: 18px;
+}
+.company-description {
+  margin: 10px 0;
 }
 .duration {
   margin-left: 8px;

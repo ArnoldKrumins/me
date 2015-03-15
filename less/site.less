@@ -151,21 +151,30 @@ background-image: -ms-linear-gradient(bottom, #276979 0%, #1E353A 100%);
   z-index: 999;
   background-color: rgb(3, 3, 3);
   .opacity(0.4);
+  font-size: 30px;
+
+    .mail{
+      padding-left: 5px;
+      color:#f5f5f5;
+    }
+
   ul{
     position: absolute;
     right: 20px;
-    top: 3px;
+    top: 0px;
 
       li{
         display: inline-block;
         i{
-          font-size: 30px;
           color:#f5f5f5;
         }
 
       }
 
   }
+
+
+
 
 }
 
@@ -310,6 +319,8 @@ background-image: -ms-linear-gradient(bottom, #276979 0%, #1E353A 100%);
 #jobs{
   position: relative;
   color:#f5f5f5;
+  margin-left: -40px;
+
   ul{
       list-style: none;
       li{
@@ -364,17 +375,31 @@ background-image: -ms-linear-gradient(bottom, #276979 0%, #1E353A 100%);
 }
 
 
+.projectskills{
+
+  margin: 20px 0;
+
+  .skill-circle{
+    border-radius: 100px 100px 100px 100px;
+    padding: 10px;
+    margin:10px 0 0 10px;
+
+  }
+
+}
+
 .dev-info{
 padding-left:5px;
 }
 
-.job-role,.project{
+.job-role,.project,.project-name,.company-name{
   .text-shadow(0px 0px 24px #f5f5f5);
 }
 
 .job-role{
   font-size: 20px;
   margin-bottom: 40px;
+
 }
 
 .project{
@@ -383,11 +408,23 @@ padding-left:5px;
 
 .project-name{
   margin-left:8px;
+  font-size: 16px;
+}
+
+.project-description{
+  margin: 10px 0px 10px 55px;
 }
 
 .company{
   position: relative;
   margin: -12px 0 0 35px;
+}
+
+.company-name{
+font-size: 18px;
+}
+.company-description{
+  margin:10px 0;
 }
 
 .duration{
