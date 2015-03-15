@@ -15,20 +15,24 @@ app.directive('cv',function(){
                             '<p class="location">{{ job.location }}</p>' +
                              '<p class="company-description">{{ job.description }}</p>' +
                              '<p class="project">Projects</p>' +
-                             '<div ng-repeat="project in job.projects">' +
+                             '<div class="project-detail" ng-repeat="project in job.projects">' +
 
                                 '<p><i class="fa fa-code"></i><span class="project-name">{{ project.name }}</span></p>' +
                                  '<team devs="project.team"></team>' +
                                  '<p class="project-description">{{ project.description }}</p>' +
                                     '<div skills-legend technologies="project.techs"></div>'+
-                             '</div>' +
+                                        '<div project-examples examples="project.examples"></div>' +
+                                '</div>' +
+
+
+
                             '</div>' +
                         '</li>' +
                     '</ul>' +
                  ' </div>',
         link:function(scope,element,attrs){
 
-
+  var j = scope.jobs;
 
         }
 

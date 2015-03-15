@@ -294,6 +294,9 @@ body {
 .project-description {
   margin: 10px 0px 10px 55px;
 }
+.project-detail {
+  margin-bottom: 50px;
+}
 .company {
   position: relative;
   margin: -12px 0 0 35px;
@@ -302,7 +305,7 @@ body {
   font-size: 18px;
 }
 .company-description {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .duration {
   margin-left: 8px;
@@ -319,6 +322,11 @@ body {
 .location {
   margin: 0px 0 0 35px;
   font-size: 14px;
+}
+.project-examples li a {
+  margin-left: 10px;
+  color: #83CFE0;
+  text-decoration: none;
 }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {

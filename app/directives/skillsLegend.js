@@ -10,7 +10,7 @@ app.directive('skillsLegend',function(){
         template:'<div class="projectskills">' +
                     '<ul>' +
                         '<li ng-repeat="tech in technologies">' +
-                            '<div class="skill-circle skill{{$index}}"><span>{{ tech.name }}</span></div>' +
+                            '<div class="skill-circle skill{{tech.class}}"><span>{{ tech.name }}</span></div>' +
                         '</li>' +
                     '</ul>' +
                   '</div>',

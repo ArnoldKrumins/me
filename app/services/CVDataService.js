@@ -27,12 +27,9 @@ app.factory('CVDataService',function($q){
                     { name: 'Agile/SCRUM', used:'100', class:'5'},
                     { name: 'Mobile', used:'100', class:'7'},
                     { name: 'Balsamiq', used:'100', class:'4'}
-                ],
-
-                examples:[{name:'Husqvarna',url:'http://www.husqvarna.com/us/home/'},
-                    {name:'McCulloch Chainsaws',url:'http://www.mcculloch.com/uk/products/'}
-
                 ]
+
+
             }
 
             ]
@@ -50,7 +47,7 @@ app.factory('CVDataService',function($q){
             projects:[{
                 name: 'Husqvarna Global Websites',
                 filter:'Web,FullStack',
-                team:1,
+                team:4,
                 description: 'Stendahls main account is Husqvarna. This involved the running, maintenance and support of over twenty individual multi-lingual websites and their CMS/DAM systems. My duties involved technical analysis of customer requests and working with Art Directors on designs. Backlog planning to provide estimation and to prioritise tasks. Creating Agile Kanban walls to visualise the on-going work and ultimately doing the work. The projects typically covered 2/3 weekly sprints, followed up by a client presentation and in team retrospective. The projects generally involved creating new campaigns, new pages and enhancements to existing content. All sites are designed to be fully responsive',
                 techs:[{ name: 'HTML', used:'100', class:'2'},
                     { name: 'CSS', used:'100', class:'2'},
@@ -61,13 +58,111 @@ app.factory('CVDataService',function($q){
                     { name: 'JQuery Mobile', used:'100', class:'7'},
                     { name: 'Agile/SCRUM', used:'100', class:'5'},
                     { name: 'Responsive Design', used:'100', class:'6'},
-                    { name: 'Third Party Libs', used:'100', class:'2'}
+                    { name: 'Third Party Libs', used:'100', class:'2'},
+                    { name: 'CMS', used:'100', class:'3'}
+
+                ],
+
+                examples:[{name:'Husqvarna',url:'http://www.husqvarna.com/us/home/'},
+                    {name:'McCulloch Chainsaws',url:'http://www.mcculloch.com/uk/products/'},
+                    {name:'Husqvarna Construction',url:'http://www.husqvarna.com/us/construction/company/proudprofessionals/'},
+                    {name:'Gardena',url:'http://www.gardena.com/au/'}
                 ]
-            }
+
+            },
+                {
+                    name: 'UD Trucks',
+                    filter:'Web,FrontEnd',
+                    team:6,
+                    description: 'I have also assisted in the launch for the Japanese UD Trucks website for the \' NewBiz \' team',
+                    techs:[{ name: 'HTML', used:'100', class:'0'},
+                        { name: 'CSS', used:'100', class:'0'},
+                        { name: 'ASP.MVC', used:'100', class:'1'},
+                        { name: 'JavaScript', used:'100', class:'0'},
+                        { name: 'Jquery', used:'100', class:'0'},
+                        { name: 'EPI Server', used:'100', class:'2'},
+                        { name: 'Agile/Scrum', used:'100', class:'4'}
+                    ],
+
+                    examples:[{name:'UD Trucks',url:'http://www.udtrucks.com/'}
+
+                    ]
+
+                },
+
+                {
+                    name: 'Cochlear',
+                    filter:'Web,FrontEnd',
+                    team:2,
+                    description: 'Was involved in technical workshop to evaluate the Xamarin mobile development framework as a suitable platform for Cochlear’s new companion mobile app.',
+                    techs:[{ name: 'Xamarin', used:'100', class:'5'},
+                        { name: 'Design Concepts', used:'100', class:'2'}
+                    ],
+
+                    examples:[{name:'Cochlear Website',url:'http://www.cochlear.com/wps/wcm/connect/intl/home/home'}
+
+                    ]
+
+                }
 
             ]
         },
 
+        { title:'Senior Web Developer',
+            order:0,
+            company:'Aztec',
+            location:'Remote working',
+            duration: 'Contract - Oct 2012 to Nov 2014',
+            URL:'https://www.aztecmoney.com/',
+            description:'Aztec Money is an open access global marketplace offering Export Trade Finance. The first marketplace for export trade receivables and invoices with immediate access to cash.',
+            projects:[{
+                name: 'Aztec Money/Exchange Websites',
+                filter:'Web,FrontEnd',
+                team:4,
+                description: 'To provide a simple, clean website design that was also localised for 30 languages.',
+                techs:[{ name: 'C#, ', used:'100', class:'0'},
+                    { name: 'ASP.MVC',used:'80',class:'0'},
+                    { name: 'CSS',used:'80',class:'1'},
+                    { name: 'HTML',used:'80',class:'1'},
+                    { name: 'Agile/Scrum', used:'100', class:'4'}
+                ],
+
+                examples:[{name:'Aztec Money',url:'https://www.aztecmoney.com/'},{name:'Aztec Exchange',url:'https://www.aztecexchange.com/'}
+
+                ]
+            }
+            ]
+
+
+        },
+
+
+
+        { title:'Senior Web Developer',
+            order:0,
+            company:'RMIT - Royal Melbourne Institute of Technology',
+            location:'Melbourne, Australia',
+            duration: 'Contract - Feb 2011 to Feb 2012',
+            URL:'http://www.rmit.edu.au',
+            description:'RMIT is one of the largest and well-respected universities in Australia with over 70,000 students spread over several areas of Melbourne and Vietnam',
+            projects:[{
+                name: 'Apply Direct Online ',
+                filter:'Web,SQL,FullStack',
+                team:4,
+                description: 'The challenge was to provide a highly available and scalable website that allowed students to apply for courses also providing back end tools for staff to process applications integrating into the existing PeopleSoft system. The site was developed on time and was regarded as a great success.',
+                techs:[{ name: 'C#, ', used:'100', class:'0'},
+                    { name: 'ASP.MVC',used:'80',class:'0'},
+                    { name: 'CSS',used:'80',class:'1'},
+                    { name: 'HTML',used:'80',class:'1'},
+                    { name: 'Fluent NHibernate',used:'80',class:'2'},
+                    { name: 'Oracle 9',used:'80',class:'2'},
+                    { name: 'Agile/Scrum', used:'100', class:'4'}
+                ]
+            }
+            ]
+
+
+        },
 
 
 
