@@ -5,14 +5,14 @@ app.controller('mainCtrl',['$scope','CVDataService',function($scope,CVDataServic
 
 
     $scope.skills = [
-        { title:'.NET'},
-        { title:'HTML/CSS'},
+        {title:'.NET'},
+        {title:'HTML/CSS'},
         {title:'Backend'},
         {title:'UX Design'},
         {title:'Agile/Scrum'},
         {title:'Responsive'},
         {title:'Mobile'},
-        {title:'Angular'}
+        {title:'JavaScript'}
     ];
 
     $scope.jobs = CVDataService.getData();

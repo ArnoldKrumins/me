@@ -13,10 +13,6 @@ app.directive('skillsLegend',function(){
                             '<div class="skill-circle skill{{tech.class}}"><span>{{ tech.name }}</span></div>' +
                         '</li>' +
                     '</ul>' +
-                  '</div>',
-        link:function(scope,element,attrs){
-
-
-        }
+                  '</div>'
     }
 })

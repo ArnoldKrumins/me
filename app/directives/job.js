@@ -9,7 +9,7 @@ app.directive('cv',function(){
         template:'<div id="jobs">' +
                     '<ul ng-repeat="job in jobs">' +
                         '<li style="display: inline-block">' +
-                            '<div class="job-container col-xs-12">' +
+                            '<div class="job-container col-xs-11">' +
                             '<p class="job-role">{{ job.title }}</p>' +
                             '<p class="company"><i class="fa fa-building"></i><span class="company-name">{{ job.company }}</span><a class="website" ng-if="job.URL.length > 0" href="{{ job.URL }}" target="_blank">website</a><span class="duration">({{ job.duration }})</span></p>' +
                             '<p class="location">{{ job.location }}</p>' +
