@@ -7,7 +7,7 @@ app.directive('projectExamples',function(){
         restrict:'EA',
         scope:{examples:'='},
         template:'<div class="project-examples" ng-show="examples.length >0">' +
-                    '<p>Examples of work.</p>' +
+                    '<p>Example(s) of work.</p>' +
                     '<ul>' +
                         '<li ng-repeat="example in examples">' +
                             '<a href="{{ example.url }}">{{ example.name }}</a>' +

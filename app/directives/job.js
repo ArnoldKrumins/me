@@ -8,8 +8,8 @@ app.directive('cv',function(){
         scope:{ jobs:'='},
         template:'<div id="jobs">' +
                     '<ul ng-repeat="job in jobs">' +
-                        '<li style="display: inline-block">' +
-                            '<div class="job-container col-xs-11">' +
+                        '<li>' +
+                            '<div class="job-container">' +
                             '<p class="job-role">{{ job.title }}</p>' +
                             '<p class="company"><i class="fa fa-building"></i><span class="company-name">{{ job.company }}</span><a class="website" ng-if="job.URL.length > 0" href="{{ job.URL }}" target="_blank">website</a><span class="duration">({{ job.duration }})</span></p>' +
                             '<p class="location">{{ job.location }}</p>' +
@@ -23,9 +23,6 @@ app.directive('cv',function(){
                                     '<div skills-legend technologies="project.techs"></div>'+
                                         '<div project-examples examples="project.examples"></div>' +
                                 '</div>' +
-
-
-
                             '</div>' +
                         '</li>' +
                     '</ul>' +

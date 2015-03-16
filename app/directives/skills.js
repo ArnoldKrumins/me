@@ -6,7 +6,7 @@ app.directive('skills',function(){
         restrict:'AE',
         replace:true,
         scope:{ skills:'=skills' },
-        template:'<div id="skills-container">' +
+        template:'<div id="skills-container" class="col-md-8 col-xs-12 col-lg-9">' +
                     '<ul>' +
                         '<li ng-repeat="skill in skills" repeat-complete>' +
                             '<div class="skill-circle skill{{$index}}"><span>{{skill.title}}</span></div>' +
@@ -31,10 +31,8 @@ app.directive('repeatComplete', function ($timeout) {
 
             if (scope.$last === true) {
 
-                $timeout(function () {
-                    element.parent().parent().css('display','block');
-                    TweenMax.staggerFrom(element.parent().find('li'), 1, {opacity:0, y:250, ease:Back.easeInOut}, 0.2);
-                },1000)
+                    TweenMax.staggerFromTo(element.parent().find('li'), 1, {opacity:0, scaleX:'0.5',ease:Back.easeInOut},{opacity:1, scaleX:'1',ease:Back.easeInOut}, 0.5);
+
 
             }
         }

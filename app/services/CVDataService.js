@@ -27,7 +27,10 @@ app.factory('CVDataService',function($q){
                     { name: 'Agile/SCRUM', used:'100', class:'5'},
                     { name: 'Mobile', used:'100', class:'7'},
                     { name: 'Balsamiq', used:'100', class:'4'}
-                ]
+                ],
+
+                examples:[{name:'Novated Lease Calculator',url:'http://www.fleetpartners.com.au/personal/novated-lease-calculator/'}
+    ]
             }
 
             ]
