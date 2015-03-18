@@ -36,6 +36,7 @@ body {
 .header-image {
   position: absolute;
   top: -20px;
+  left: -35px;
   background-image: url('../images/me.jpg');
   background-repeat: no-repeat;
   background-color: #00E8FE;
@@ -43,7 +44,7 @@ body {
   min-height: 520px;
   height: 520px;
   margin: 0;
-  width: 101%;
+  width: 110%;
   min-width: 100%;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
@@ -126,7 +127,7 @@ body {
 #skills-container {
   position: absolute;
   top: 80px;
-  left: 180px;
+  left: 150px;
 }
 #skills-container ul {
   list-style: none;
