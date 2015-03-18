@@ -37,6 +37,7 @@ body {
   position: absolute;
   top: -20px;
   left: -35px;
+  right: 0;
   background-image: url('../images/me.jpg');
   background-repeat: no-repeat;
   background-color: #00E8FE;
@@ -44,8 +45,6 @@ body {
   min-height: 520px;
   height: 520px;
   margin: 0;
-  width: 110%;
-  min-width: 100%;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
   .header-image {
@@ -87,7 +86,7 @@ body {
   width: 80px;
   position: fixed;
   top: 35%;
-  right: -80px;
+  right: -75px;
   border: 1px solid #3a3b3f;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #11c5d9), color-stop(1, #032b40));
   background-image: -o-linear-gradient(bottom, #11c5d9 0%, #032b40 100%);
