@@ -345,7 +345,7 @@ body {
   }
   #skills-container {
     position: absolute;
-    top: 80px;
+    top: 120px;
     left: 300px;
   }
   #skills-container ul {
@@ -392,8 +392,8 @@ body {
   }
   #skills-container {
     position: absolute;
-    top: 80px;
-    left: 300px;
+    top: 120px;
+    left: 60px;
   }
   #skills-container ul {
     list-style: none;
