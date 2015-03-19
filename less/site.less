@@ -374,8 +374,12 @@ padding-left:5px;
 
 
 .project-name{
-  margin-left:8px;
+  //position: relative;
   font-size: 16px;
+  display: block;
+
+  top: -27px;
+  left: 40px;
 }
 
 .project-description{
@@ -384,7 +388,19 @@ padding-left:5px;
 }
 
 .project-detail{
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+}
+
+
+.project-separator{
+  position: absolute;
+  //top:20px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  height: 2px;
+  //width: 100%;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .company{
@@ -418,6 +434,7 @@ font-size: 18px;
 }
 
 .project-examples{
+  margin-bottom: 38px;
   li{
     a{
       margin-left: 25px;

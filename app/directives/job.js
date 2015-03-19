@@ -17,13 +17,16 @@ app.directive('cv',function(){
                              '<p class="project">Projects</p>' +
                              '<div class="project-detail" ng-repeat="project in job.projects">' +
 
-                                '<p><i class="fa fa-code"></i><span class="project-name">{{ project.name }}</span></p>' +
+                                '<p class="project-name">{{ project.name }}</p>' +
                                  '<team devs="project.team"></team>' +
                                  '<p class="project-description">{{ project.description }}</p>' +
                                     '<div skills-legend technologies="project.techs"></div>'+
                                         '<div project-examples examples="project.examples"></div>' +
+                                     '<span ng-show="!$last" class="project-separator col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10"></span>' +
                                 '</div>' +
+
                             '</div>' +
+
                         '</li>' +
                     '</ul>' +
                  ' </div>',
