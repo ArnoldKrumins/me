@@ -18,7 +18,7 @@ app.factory('CVDataService',function($q){
                 name: '\'Novated \' Lease Calculator and \' MyCar \' web portal.',
                 filter:'Web,FullStack',
                 team:1,
-                description: 'I was brought in to design and develop the \'Novated \' Lease Calculator’ of the new FleetPartner’s ‘MyCar’ web portal. This is the integral part of the portal allowing users to choose and configure their new Novated vehicle. As well as developing the calculator I was also responsible for the UI design and look and feel.',
+                description: 'I was brought in to design and develop the \'Novated \' Lease Calculator of the new FleetPartner\'s \' MyCar \' web portal. This is the integral part of the portal allowing users to choose and configure their new Novated vehicle. As well as developing the calculator I was also responsible for the UI design and look and feel.',
                 techs:[{ name: 'AngularJS', used:'100', class:'2'},
                     { name: 'Bootstrap', used:'100', class:'2'},
                     { name: 'HTML', used:'100', class:'2'},
@@ -31,9 +31,22 @@ app.factory('CVDataService',function($q){
                     { name: 'Subversion', used:'100', class:'3'}
                 ],
 
-                examples:[{name:'Novated Lease Calculator',url:'http://www.fleetpartners.com.au/personal/novated-lease-calculator/'}
-    ]
-            }
+                examples:[
+                            {
+                                name:'Novated Lease Calculator',
+                                url:'http://www.fleetpartners.com.au/personal/novated-lease-calculator/',
+                                images:[
+                                    {path:'./images/examples/one.png',figure:'1', description:'This is a first page of the Introduction screen. Explaining that a novated vehicle can save you money.'},
+                                    {path:'./images/examples/two.png',figure:'2', description:'The next screen allows the user to select a car make from the ten most popular brands, and also if they desire \' new \' or \' used \' model.'},
+                                    {path:'./images/examples/three.png',figure:'3', description:'Once the user has selected the vehicle make. A selection of body shapes available for the make are highlighted.'},
+                                    {path:'./images/examples/four.png',figure:'4', description:'After the body shape is selected, the variants are presented. This includes model,transmission and year.'},
+                                    {path:'./images/examples/five.png',figure:'5', description:'The next section displays images of the chosen vehicle. Addition information is collected to be used for the final calculation. This includes post code, lease term in months, and approximate annual mileage.'},
+                                    {path:'./images/examples/six.png',figure:'6', description:'The summary page displays the final breakdown of costs. This includes addition factors such as maintenance and fuel cost. These values can be changed and the quote can be re-calculated.'},
+                                    {path:'./images/examples/seven.png',figure:'7', description:'The final page provides a detailed breakdown summary of quote.' },
+                                ]
+                            }
+                      ]
+                    }
 
             ]
 
@@ -68,8 +81,24 @@ app.factory('CVDataService',function($q){
 
                 ],
 
-                examples:[{name:'Husqvarna',url:'http://www.husqvarna.com/us/home/'},
-                    {name:'McCulloch Chainsaws',url:'http://www.mcculloch.com/uk/products/'},
+                examples:[
+                    {name:'Husqvarna Websites',url:'http://www.husqvarna.com/us/home/',
+
+//                        images:[
+//                            {path:'./images/examples/hq.png',figure:'1', description:'Image 8'},
+//                            {path:'./images/examples/hqmobile.png',figure:'2', description:'Image 9'},
+//                        ]
+                    },
+
+
+                    {name:'McCulloch Chainsaws',url:'http://www.mcculloch.com/uk/products/',
+
+//                        images:[
+//                            {path:'./images/examples/mcc.png',figure:'1', description:'Image 8'},
+//                            {path:'./images/examples/mccmobile.png',figure:'2', description:'Image 9'},
+//                        ]
+
+                    },
                     {name:'Husqvarna Construction',url:'http://www.husqvarna.com/us/construction/company/proudprofessionals/'},
                     {name:'Gardena',url:'http://www.gardena.com/au/'}
                 ]

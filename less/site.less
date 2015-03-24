@@ -35,6 +35,15 @@
   border: solid 2px #f5f5f5;
 }
 
+.tag-circle(@colour){
+  padding: 6px;
+  font-size:18px;
+  .border-radius-custom(120px,120px,120px,120px);
+  .opacity(0.8);
+  background-color: @colour; //orangered;
+  border: solid 2px #f5f5f5;
+}
+
 .border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
   -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
   -moz-border-radius: @topleft @topright @bottomright @bottomleft;
@@ -56,27 +65,34 @@
 
 
 
+
 body{
   font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
   //background-color: #000000;
 
-  /* IE10 Consumer Preview */
-background-image: -ms-linear-gradient(bottom, #276979 0%, #1E353A 100%);
+  .at2x('../images/examples/mesh.png', 149px, 104px);
+  //.at2x('../images/examples/mesh-small.png', 192px, 192px);
+  background-color:#000000;
+  background-repeat: repeat;
+  //background: #000000 url("../images/examples/mesh.png") repeat;
 
-  /* Mozilla Firefox */
-  background-image: -moz-linear-gradient(bottom, #276979 0%, #1E353A 100%);
-
-  /* Opera */
-  background-image: -o-linear-gradient(bottom, #276979 0%, #1E353A 100%);
-
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #276979), color-stop(1, #1E353A));
-
-  /* Webkit (Chrome 11+) */
-  background-image: -webkit-linear-gradient(bottom, #276979 0%, #1E353A 100%);
-
-  /* W3C Markup, IE10 Release Preview */
-  background-image: linear-gradient(to top, #276979 0%, #1E353A 100%);
+  //  /* IE10 Consumer Preview */
+//background-image: -ms-linear-gradient(bottom, #276979 0%, #1E353A 100%);
+//
+//  /* Mozilla Firefox */
+//  background-image: -moz-linear-gradient(bottom, #276979 0%, #1E353A 100%);
+//
+//  /* Opera */
+//  background-image: -o-linear-gradient(bottom, #276979 0%, #1E353A 100%);
+//
+//  /* Webkit (Safari/Chrome 10) */
+//  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #276979), color-stop(1, #1E353A));
+//
+//  /* Webkit (Chrome 11+) */
+//  background-image: -webkit-linear-gradient(bottom, #276979 0%, #1E353A 100%);
+//
+//  /* W3C Markup, IE10 Release Preview */
+//  background-image: linear-gradient(to top, #276979 0%, #1E353A 100%);
 
 }
 
@@ -332,7 +348,7 @@ background-image: -ms-linear-gradient(bottom, #276979 0%, #1E353A 100%);
   width:40%;
 }
 
-.fa-user,.fa-users,.fa-building {
+.fa-user,.fa-users,.fa-building{
   .tag(orangered);
   .shadow;
 }
@@ -342,20 +358,39 @@ background-image: -ms-linear-gradient(bottom, #276979 0%, #1E353A 100%);
   .shadow;
 }
 
+.figure{
+  margin: 0 5px 2px 0;
+}
 
-.projectskills{
+.figure-image{
+  position:absolute;
+  .opacity(1);
+  top:-10px;
+  left:0;
+  .tag-circle(orangered);
+  .shadow;
+  padding: 2px 8px;
+  font-size: 16px;
+
+}
+
+
+
+
+.projectskills {
 
   margin: 20px 0;
 
-  .skill-circle{
+  .skill-circle {
     border-radius: 100px 100px 100px 100px;
     padding: 10px;
-    margin:10px 0 0 10px;
-    .shadow;
+    margin: 10px 0 0 10px;
+    .shadow(15px 15px 14px -7px #000000);
 
   }
-
 }
+
+
 
 .dev-info{
 padding-left:5px;
@@ -442,12 +477,49 @@ font-size: 18px;
   }
 }
 
+.example-images{
+  position: relative;
+  margin-top: 20px;
+
+  p{
+    margin-top: 16px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  img{
+    .shadow(15px 15px 14px -7px #000000);
+    .border-radius-custom(10px, 10px, 10px, 10px);
+    max-width: 100%;height:auto;
+    display:block;
+  }
+}
+
+
 
 /* iPads (landscape) ----------- */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape) {
+
+
+    .team{
+      margin-left: 56px;
+    }
+
+
+  .example-images{
+    margin-left: 50px;
+    p{
+      position: absolute;
+      top: 0;
+      left: 327px;
+      margin-top: 16px;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
 
   .company-description,.project-description{
     font-size:16px;
@@ -505,6 +577,24 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 
 
+  .team{
+    margin-left: 56px;
+  }
+
+
+
+  .example-images{
+    margin-left: 50px;
+    p{
+      position: absolute;
+      top: 0;
+      left: 327px;
+      margin-top: 16px;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+
   .company-description,.project-description{
     font-size:16px;
   }
@@ -560,6 +650,23 @@ and (orientation : portrait) {
 and (min-width : 1224px) {
 
 
+    .team{
+      margin-left: 56px;
+    }
+
+
+  .example-images{
+    margin-left: 50px;
+    p{
+      position: absolute;
+      top: 0;
+      left: 327px;
+      margin-top: 16px;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+
   .project-description{
     margin: 10px 0px 10px 55px;
   }
@@ -610,6 +717,17 @@ and (min-width : 1224px) {
 @media only screen
 and (min-width : 1824px) {
 
+  .example-images{
+    margin-left: 50px;
+    p{
+      position: absolute;
+      top: 0;
+      left: 327px;
+      margin-top: 16px;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
 
 
 }
