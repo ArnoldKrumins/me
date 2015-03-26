@@ -21,12 +21,7 @@ app.directive('navMenu',function(){
             tl.play();
 
 
-            //TweenMax.staggerFrom(element.children(),2,{scale:0.5,opacity:0,delay:0.5,ease:Elastic.easeOut},0.2);
-               //TweenMax.to(element,0,{opacity:0.5},0);
 
-                //element.on('mouseenter',function(){
-                  //  TweenMax.to($('#nav-menu'),0.5,{left:100});
-               //})
 
 
         }
