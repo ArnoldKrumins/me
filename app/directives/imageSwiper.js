@@ -17,8 +17,7 @@ app.directive('imageSwiper',function(){
                     '</div>' +
                     '</div>' +
                     '<div class="swiper-pagination"></div>' +
-//                    '<i class="fa fa-chevron-left" pulse></i>' +
-//                    '<i class="fa fa-chevron-right" pulse></i>' +
+                  '<i class="fa fa-chevron-right" pulse></i>' +
                     '</div>',
 
         link:  function(scope,element, attrs) {

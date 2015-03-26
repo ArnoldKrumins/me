@@ -31,7 +31,7 @@ app.directive('repeatComplete', function ($timeout) {
 
             if (scope.$last === true) {
 
-                    TweenMax.staggerFromTo(element.parent().find('li'), 1, {opacity:0,scaleX:'0',scaleY:'0'},{opacity:1,scaleX:'1', scaleY:'1',ease:Back.easeOut}, 0.5);
+                    TweenMax.staggerFromTo(element.parent().find('li'), 0.5, {opacity:0,scaleX:'0',scaleY:'0'},{opacity:1,scaleX:'1', scaleY:'1',ease:Back.easeOut}, 0.2);
 
 
             }

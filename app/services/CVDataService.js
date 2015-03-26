@@ -1,7 +1,7 @@
 /**
  * Created by arnoldkrumins on 10/03/15.
  */
-app.factory('CVDataService',function($q){
+app.factory('CVDataService',function(){
 
     var jobs = [
 

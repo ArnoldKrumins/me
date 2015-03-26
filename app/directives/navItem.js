@@ -1,7 +1,7 @@
 /**
  * Created by arnoldkrumins on 26/02/15.
  */
-app.directive('navItem',function($window){
+app.directive('navItem',['$window',function($window){
 
     var scale = 0.8;
 
@@ -26,5 +26,5 @@ app.directive('navItem',function($window){
         }
     }
 
-})
+}])
 
