@@ -6,7 +6,7 @@ app.directive('skills',function(){
         restrict:'AE',
         replace:true,
         scope:{ skills:'=skills' },
-        template:'<div id="skills-container" class="col-md-8 col-lg-9">' +
+        template:'<div id="skills-container" class="col-md-8 col-lg-9" ng-cloak>' +
                     '<ul>' +
                         '<li ng-repeat="skill in skills" repeat-complete>' +
                             '<div class="skill-circle skill{{$index}}"><span>{{skill.title}}</span></div>' +
