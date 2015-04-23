@@ -24,18 +24,23 @@ app.directive('skills',function(){
 
 
 
-app.directive('repeatComplete', function ($timeout) {
+app.directive('repeatComplete',['$timeout', function ($timeout) {
     return {
         restrict: 'A',
         link: function (scope, element, __) {
 
             if (scope.$last === true) {
 
+                $timeout(function(){
+                    element.parent().css('display','block');
                     TweenMax.staggerFromTo(element.parent().find('li'), 0.5, {opacity:0,scaleX:'0',scaleY:'0'},{opacity:1,scaleX:'1', scaleY:'1',ease:Back.easeOut}, 0.2);
+
+                },3000);
+
 
 
             }
         }
     };
-});
+}]);
 

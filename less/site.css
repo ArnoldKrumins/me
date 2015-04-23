@@ -139,6 +139,7 @@ body {
 }
 #skills-container ul {
   list-style: none;
+  display: none;
 }
 #skills-container ul li {
   margin: 8px;
