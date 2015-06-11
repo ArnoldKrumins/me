@@ -414,13 +414,18 @@ body {
 .skills-description {
   visibility: hidden;
   position: absolute;
-  left: 70px;
+  font-style: italic;
   text-shadow: 2px 2px 2px #3d3939;
   color: #f5f5f5;
 }
-.skills-description span {
+.skills-description span,
+.skills-description i {
   font-size: 30px;
   padding-right: 20px;
+}
+.skills-description i {
+  font-size: 20px!important;
+  margin-bottom: 10px;
 }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
