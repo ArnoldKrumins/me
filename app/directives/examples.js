@@ -11,6 +11,7 @@ app.directive('projectExamples',function(){
                     '<ul>' +
                         '<li ng-repeat="example in examples">' +
                             '<a href="{{ example.url }}">{{ example.name }}</a>' +
+                            '<example-image ng-show="example.images.length > 0" images="example.images"></example-image>' +
                         '</li>' +
                     '</ul>' +
                 '</div>'

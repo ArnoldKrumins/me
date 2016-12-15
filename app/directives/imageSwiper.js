@@ -10,36 +10,41 @@ app.directive('imageSwiper',function(){
         scope:{
             images:'='
         },
-        template:'<div class="swiper-container">' +
-                    '<i ng-click="prev()" class="fa fa-chevron-left" pulse></i>' +
-                    '<i ng-click="next()" class="fa fa-chevron-right" pulse></i>' +
-                        '<div class="swiper-wrapper">' +
-                            '<a ng-repeat="image in images" href="image.url">' +
-                                '<img src="image.path">' +
-                                '<h3>{{ image.text}}</h3>' +
-                             '</a>' +
-                        '</div>' +
+        template:'<div class="swiper-container one>' +
+                    '<div class="swiper-wrapper">' +
+                    '<div ng-repeat="image in images" class="swiper-slide">' +
+                    '<img src="{{image.path}}">' +
                     '</div>' +
+                    '</div>' +
+                    '<div class="swiper-pagination"></div>' +
+                  '<i class="fa fa-chevron-right" pulse></i>' +
                     '</div>',
 
         link:  function(scope,element, attrs) {
 
-            swiper = new Swiper('.bodytype', {
-                speed: 750,
-                mode: 'horizontal',
+            var s = scope.images;
+
+
+            swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                nextButton: '.fa-chevron-right',
+                prevButton: '.fa-chevron-left',
                 slidesPerView: 1,
-                loop:true
+                paginationClickable: true,
+                spaceBetween: 30,
+                loop: true
             });
+
 
         },
         controller: function ($scope, $element, $attrs) {
 
             $scope.next = function () {
-                swiper.swipeNext();
+                swiper.slideNext();
             };
 
             $scope.prev = function () {
-                swiper.swipePrev();
+                swiper.slidePrev();
             };
 
         }

@@ -1,14 +1,16 @@
 /**
  * Created by arnoldkrumins on 24/02/15.
  */
-var app = angular.module('me',['ngAnimate']);
+var app = angular.module('me',[])
 
-app.config(function config($compileProvider){
+.config([
 
-    $compileProvider.debugInfoEnabled(true);
+    '$compileProvider',function config($compileProvider){
+    $compileProvider.debugInfoEnabled(false);
 
 
-});
+}]);
+
 
 
 
