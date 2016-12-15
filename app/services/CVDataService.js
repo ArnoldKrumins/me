@@ -1,6 +1,4 @@
-/**
- * Created by arnoldkrumins on 10/03/15.
- */
+
 app.factory('CVDataService', function ($q) {
 
     var jobs = [
