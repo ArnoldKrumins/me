@@ -2,35 +2,41 @@
 app.factory('CVDataService', function ($q) {
 
     var jobs = [
+
+
         {
             title: 'Lead Software Engineer',
             order: 0,
-            keys: ['AngularJS', 'WEB API', 'Angular 2','ExtJS'],
+            keys: ['AngularJS', 'WEB API'],
             company: 'WideOrbit',
             location: 'Gothenburg, Sweden',
-            duration: 'Perm - April 2014 to Present',
+            duration: 'April 2015 to Present',
             URL: 'http://www.wideorbit.com',
-            description: 'FleetPartners are one of the biggest and leading corporate vehicle leasing company in Australia',
+            description: 'WideOrbit is a technology platform for media companies built to create value on both sides of media transactions. WideOrbit\'s core solution, WO Traffic, was introduced in 1999 to streamline workflow for customers in radio, cable, and TV. In 2015, the Programmatic advertising media exchange was introduced as an innovative approach to the buying process, increasing demand for broadcasters and efficiencies for advertisers.',
             projects: [{
-                name: '\'Novated \' Lease Calculator and \' MyCar \' web portal.',
+                name: 'Programmatic TV Buyer and Seller Consoles',
                 filter: 'Web,FullStack',
-                team: 1,
-                description: 'I was brought in to design and develop the \'Novated \' Lease Calculator’ of the new FleetPartner’s ‘MyCar’ web portal. This is the integral part of the portal allowing users to choose and configure their new Novated vehicle. As well as developing the calculator I was also responsible for the UI design and look and feel.',
-                techs: [{name: 'AngularJS', used: '100', class: '2'},
-                    {name: 'Bootstrap', used: '100', class: '2'},
-                    {name: 'HTML', used: '100', class: '2'},
-                    {name: 'CSS3', used: '100', class: '2'},
+                team: 5,
+                description: 'My team where responsible for adding new features to the \'Buyer Console\', \'Seller Console\' as well as maintaining \'Spotbank\', the creative management portal.',
+                techs: [{name: '.NET', used: '100', class: '2'},
+                    {name: 'C#', used: '100', class: '2'},
                     {name: 'WEB API', used: '100', class: '3'},
                     {name: 'REST', used: '100', class: '3'},
-                    {name: 'Agile/SCRUM', used: '100', class: '5'},
-                    {name: 'Mobile', used: '100', class: '7'},
-                    {name: 'Balsamiq', used: '100', class: '4'},
-                    {name: 'Subversion', used: '100', class: '3'}
+                    {name: 'Octopus Deploy', used: '100', class: '5'},
+                    {name: 'GIT', used: '100', class: '3'},
+                    {name: 'TFS Online', used: '100', class: '3'},
+                    {name: 'ExtJS', used: '100', class: '3'}
                 ],
 
                 examples: [{
                     name: 'Novated Lease Calculator',
-                    url: 'http://www.fleetpartners.com.au/personal/novated-lease-calculator/'
+                    url: 'http://www.fleetpartners.com.au/personal/novated-lease-calculator/',
+                    images:[
+                        { border:true, figure:'1', location:'http://arnoldcv.azurewebsites.net/images/examples/PTV1@2x.png',description:'The Buyer Console allows agencies and advertisers to create campaigns to target specific channels and demographics.'},
+                        { border:true, figure:'2', location:'http://arnoldcv.azurewebsites.net/images/examples/PTV2@2x.png',description:'Here the user can create \'Adgroups\' that can specifically target \'channels\', \'geo regions\',\'day parts\', \'user age groups\'. \'AdGroups\' are generated into bids that are passed to ADX (Ad Exchange) and compete against other \'AdGroups\' for the Broadcasters\' available \'Ad Slots\'.' },
+                        { border:true, figure:'3', location:'http://arnoldcv.azurewebsites.net/images/examples/PTV3@2x.png',description:'\'Spotbank\' allows agencies and advertiser to manage the encoding and approval process by broadcasters of their video and audio assets.'},
+                        { border:true, figure:'4', location:'http://arnoldcv.azurewebsites.net/images/examples/PTV4@2x.png',description:'In the \'Seller Console\' Broadcasters can manage offers (winning bids from ADX) from Advertisers/Agencies and more importantly how to maximise their revenue by scheduling these bids in the optimum way.'}
+                    ]
                 }
                 ]
             }
@@ -68,7 +74,16 @@ app.factory('CVDataService', function ($q) {
 
                 examples: [{
                     name: 'Novated Lease Calculator',
-                    url: 'http://www.fleetpartners.com.au/personal/novated-lease-calculator/'
+                    url: 'http://www.fleetpartners.com.au/personal/novated-lease-calculator/',
+                    images:[
+                        { border:true, figure:'1', location:'http://arnoldcv.azurewebsites.net/images/examples/one@2x.png',description:'This is a first page of the Introduction screen. Explaining that a novated vehicle can save you money.'},
+                        { border:true, figure:'2', location:'http://arnoldcv.azurewebsites.net/images/examples/two@2x.png',description:'The next screen allows the user to select a car make from the ten most popular brands, and also if they desire \' new \' or \' used \' model.'},
+                        { border:true, figure:'3', location:'http://arnoldcv.azurewebsites.net/images/examples/three@2x.png',description:'Once the user has selected the vehicle make. A selection of body shapes available for the make are highlighted.'},
+                        { border:true, figure:'4', location:'http://arnoldcv.azurewebsites.net/images/examples/four@2x.png',description:'After the body shape is selected, the variants are presented. This includes model,transmission and year.'},
+                        { border:true, figure:'5', location:'http://arnoldcv.azurewebsites.net/images/examples/five@2x.png',description:'The next section displays images of the chosen vehicle. Addition information is collected to be used for the final calculation. This includes post code, lease term in months, and approximate annual mileage.'},
+                        { border:true, figure:'6', location:'http://arnoldcv.azurewebsites.net/images/examples/six@2x.png',description:'The summary page displays the final breakdown of costs. This includes addition factors such as maintenance and fuel cost. These values can be changed and the quote can be re-calculated.'},
+                        { border:true, figure:'7', location:'http://arnoldcv.azurewebsites.net/images/examples/seven@2x.png',description:'The final page provides a detailed breakdown summary of quote.'},
+                    ]
                 }
                 ]
             }
@@ -107,13 +122,40 @@ app.factory('CVDataService', function ($q) {
 
                 ],
 
-                examples: [{name: 'Husqvarna', url: 'http://www.husqvarna.com/us/home/'},
-                    {name: 'McCulloch Chainsaws', url: 'http://www.mcculloch.com/uk/products/'},
+                examples: [
                     {
-                        name: 'Husqvarna Construction',
-                        url: 'http://www.husqvarna.com/us/construction/company/proudprofessionals/'
+                        name: 'Husqvarna', url: 'http://www.husqvarna.com/us/home/',
+
+                        images:[
+                            { border:true, figure:'1', location:'http://arnoldcv.azurewebsites.net/images/examples/hq@2x.png',description: 'Desktop website'},
+                            { border:true, figure:'2', location:'http://arnoldcv.azurewebsites.net/images/examples/hqmobile@2x.png',description: 'Mobile website'}
+                        ]
+
                     },
-                    {name: 'Gardena', url: 'http://www.gardena.com/au/'}
+                    {
+                        name: 'McCulloch Chainsaws', url: 'http://www.mcculloch.com/uk/products/',
+
+                        images:[
+                            { border:true, figure:'1', location:'http://arnoldcv.azurewebsites.net/images/examples/mcc@2x.png',description: 'Desktop website'},
+                            { border:true, figure:'2', location:'http://arnoldcv.azurewebsites.net/images/examples/mccmobile@2x.png',description: 'Mobile website'}
+                        ]
+
+                    },
+                    {
+                        name: 'Husqvarna Construction', url: 'http://www.husqvarna.com/us/construction/company/proudprofessionals/',
+
+                        images:[
+                            { border:true, figure:'1', location:'http://arnoldcv.azurewebsites.net/images/examples/hqpp@2x.png',description: 'Desktop website'}
+                        ]
+
+                    },
+                    {
+                        name: 'Gardena', url: 'http://www.gardena.com/au/',
+
+                        images:[
+                            { border:true, figure:'1', location:'http://arnoldcv.azurewebsites.net/images/examples/gardena@2x.png',description: 'Desktop website'}
+                        ]
+                    }
                 ]
 
             },
@@ -155,42 +197,6 @@ app.factory('CVDataService', function ($q) {
 
             ]
         },
-
-        {
-            title: 'Senior Web Developer',
-            order: 0,
-            keys: ['FrontEnd', 'Azure'],
-            company: 'Aztec',
-            location: 'Remote working',
-            duration: 'Contract - Oct 2012 to Nov 2014',
-            URL: 'https://www.aztecmoney.com/',
-            description: 'Aztec Money is an open access global marketplace offering Export Trade Finance. The first marketplace for export trade receivables and invoices with immediate access to cash.',
-            projects: [{
-                name: 'Aztec Money/Exchange Websites',
-                filter: 'Web,FrontEnd',
-                team: 4,
-                description: 'To provide a simple, clean website design that was also localised for 30 languages.',
-                techs: [{name: 'C#, ', used: '100', class: '0'},
-                    {name: 'ASP.MVC', used: '80', class: '0'},
-                    {name: 'CSS', used: '80', class: '1'},
-                    {name: 'HTML', used: '80', class: '1'},
-                    {name: 'Azure', used: '80', class: '1'},
-                    {name: 'Agile/Scrum', used: '100', class: '4'},
-                    {name: 'TFS Online', used: '100', class: '3'}
-                ],
-
-                examples: [{name: 'Aztec Money', url: 'https://www.aztecmoney.com/'}, {
-                    name: 'Aztec Exchange',
-                    url: 'https://www.aztecexchange.com/'
-                }
-
-                ]
-            }
-            ]
-
-
-        },
-
 
         {
             title: 'Senior Web Developer',

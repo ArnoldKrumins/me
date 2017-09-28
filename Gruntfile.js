@@ -3,8 +3,8 @@
  */
 module.exports = function (grunt) {
 
-    grunt.registerTask('default', ['concat','uglify','cssmin']);
-
+    //grunt.registerTask('default', ['concat','uglify','cssmin']);
+    grunt.registerTask('default', ['concat','cssmin']);
 
     grunt.initConfig({
         concat:{
@@ -36,19 +36,19 @@ module.exports = function (grunt) {
                         dest: 'dist/app.min.css'
                     }
                 },
-        uglify:{
-            js:{
-                src:['dist/app.min.js'],
-                dest:'dist/app.min.js'
-
-            }
-        }
+        // uglify:{
+        //     js:{
+        //         src:['dist/app.min.js'],
+        //         dest:'dist/app.min.js'
+        //
+        //     }
+        // }
 
     });
 
     grunt.loadNpmTasks("grunt-contrib-concat");
     grunt.loadNpmTasks("grunt-contrib-cssmin");
-    grunt.loadNpmTasks("grunt-contrib-uglify");
+    //grunt.loadNpmTasks("grunt-contrib-uglify");
 };
 
 

@@ -439,11 +439,9 @@ body {
     margin-left: 50px;
   }
   .example-images p {
-    position: absolute;
-    top: 0;
-    left: 327px;
+
     margin-top: 16px;
-    width: 60%;
+    width: 70%;
     font-size: 16px;
   }
   .company-description,
@@ -503,9 +501,8 @@ body {
     margin-left: 50px;
   }
   .example-images p {
-    position: absolute;
-    top: 0;
-    left: 327px;
+
+
     margin-top: 16px;
     width: 40%;
     font-size: 16px;
@@ -567,11 +564,9 @@ body {
     margin-left: 50px;
   }
   .example-images p {
-    position: absolute;
-    top: 0;
-    left: 327px;
+
     margin-top: 16px;
-    width: 60%;
+    width: 70%;
     font-size: 16px;
   }
   .project-description {
@@ -624,11 +619,9 @@ body {
     margin-left: 50px;
   }
   .example-images p {
-    position: absolute;
-    top: 0;
-    left: 327px;
+
     margin-top: 16px;
-    width: 60%;
+    width: 70%;
     font-size: 16px;
   }
 }
